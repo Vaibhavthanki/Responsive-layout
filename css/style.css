@@ -1,0 +1,607 @@
+*{
+    margin: 0;
+    padding:  0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto Slab', serif;
+}
+/*--------------------------------commen css--------------------------------------------------------*/
+h1,h2,h3,h4,h5,h6{
+     font-family: 'Roboto Condensed', sans-serif;
+     font-weight: 600;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.padding{
+    padding: 50px 0;
+}
+#linebreak::after{
+    content: '\a';
+    white-space: pre;
+}
+.commenbtn{
+    padding: 10px 20px;
+    color: white;
+    background-color: #008fff;
+    border: 1px solid #008fff;
+    display: table;
+    border-radius: 4px;
+}
+.margin-bottom{
+    margin-bottom: 3rem;
+}
+/*-----------------------------------------css for header section-----------------------------------*/
+
+header nav img{
+    max-width: 80px;
+}
+header .navbar{
+    padding: 0;
+}
+header .navbar-brand{
+    padding: 0;
+}
+header .navbar-collapse{
+    flex-grow: unset;
+}
+header .dropdown-menu{
+    padding: 0;
+}
+header .dropdown-item{
+    padding: 0.5rem 1.25rem;
+}
+header .downloadbtn{
+    padding: 0.5rem 2rem;
+    border: 1px solid #008fff;
+    background-color: #008fff;
+    color: white;
+    border-radius: 6px;
+}
+header .downloadbtn:hover{
+    animation: shakeX;
+    animation-duration: 2s;
+}
+.dropdown-item:hover{
+    background-color: #008fff;
+    color: white;
+}
+/*----------------------------------------------css for banner section---------------------------------*/
+.banner{
+    position: relative;
+}
+.banner .owl-nav{
+    display: none;
+}
+.banner .owl-dots{
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translate(-50%,20%);
+} 
+#slider1 .owl-dot.active span{
+    background-color: #008fff;
+} 
+#slider1 .owl-dot span{
+    background-color: transparent;
+    border: 1px solid #008fff;
+
+}
+.banner .bannercontent{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+.bannercontent{
+    color: white;
+}
+.bannercontent p{
+    margin: 10px 0 20px 0;
+}
+#slider1 .item::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0.7;
+}
+.banner .welcome{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+    color: white;
+    display: none;
+}
+.banner .commenbtn:hover{
+    animation: shakeY;
+    animation-duration: 2s;
+    transition: .5s all ease-in-out;
+    color: white;
+}
+/*--------------------------------------css for cards section ------------------------------------*/
+.cards{
+    background-color: beige;
+    padding-bottom: 50px;
+}
+.cards .fourcards{
+    text-align: center;
+    padding: 30px 10px;
+    border: 1px solid beige;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    background-color: beige;
+    border-radius: 6px;
+}
+
+.fourcards img{
+    min-width: 70px;
+}
+.fourcards h4{
+    margin: 15px 0;
+}
+.fourcards:hover{
+    transform: scale(1.1);
+    transition: 0.8s all ease-in-out;
+}
+.cardposition{
+    position: relative;
+    top: -100px;
+    z-index: 1;
+}
+
+.fourcards p{
+    line-height: 30px;
+}
+.icons p{
+    margin-top: 10px;
+}
+.iconimage img{
+    width: 100%;
+}
+#slider2{
+    display: none;
+}
+#slider2 img{
+    max-width: 100px;
+    margin: 0 auto;
+}
+#slider2 p{
+    padding: 0 13px;
+}
+/*-------------------------------------------css for aboutus section----------------------------------*/
+.aboutus li{
+    font-weight: bolder;
+    line-height: 35px;
+}
+.aboutus li i{
+    color: #008fff;
+    margin-right: 10px;
+}
+.aboutus p{
+    text-align: justify;
+}
+.aboutusimage img{
+    width: 100%;
+}
+.aboutusimage2{
+    display: none;
+}
+/*--------------------------------------------css for call section-----------------------------------*/
+.call{
+    background-image: linear-gradient(rgba(0,143,255,0.6),rgba(0,143,255,0.6)),url(../images/callsectionimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.callimagecontent{
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+.callimagecontent h2 a{
+    color: white;
+}
+.callimagecontent a i{
+    margin-right: 5px;
+}
+.callbtn{
+    display: table;
+    margin:  0 auto;
+    padding: 10px 20px;
+    border: 1px solid white;
+    margin-top: 20px;
+    background-color: white;
+    color: #008fff;
+    border-radius: 6px;
+}
+.callimagecontent .callbtn:hover{
+    animation: flip;
+    animation-duration: 2s;
+    transition: 0.5s all ease-in-out;
+}
+/*--------------------------------------css for price section-----------------------------------------*/
+.pricecards{
+    text-align: center;
+}
+.price .pricecards{
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+}
+.pricecards:hover{
+    transform: scale(1.1);
+    transition: 0.5s all ease-in-out;
+}
+.pricecards .plan{
+    padding: 50px 0 25px 0;
+}
+.plan span{
+    display: block;
+    margin: 5px 0 15px 0;
+    font-size: 20px;
+}
+.plan aside{
+    color: #008fff;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Roboto Condensed', sans-serif;;
+}
+.plan sup{
+    font-size: 35px;
+}
+.plan sub{
+    color: black;
+    font-weight: 400;
+    font-size: 25px;
+}
+.pricecards .features{
+    padding: 25px 0;
+    background-color: beige;
+}
+.features li{
+    margin: 10px 0;
+}
+.pricecards .buynow{
+    padding: 25px 0 50px 0;
+}
+.buynow .commenbtn{
+    display: table;
+    margin: 0 auto;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #008fff;
+    color: white;
+}
+.buynow a:hover{
+    animation: heartBeat;
+    animation-duration: 2s;
+}
+.buynow a i{
+    margin-right: 5px;
+}
+/*-------------------------------------------css for corporate section--------------------------------*/
+.corporate{
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(../images/corporateimage.jpg);
+    background-size: cover;
+    background-position: center center;
+    color: white;
+}
+.corporateimge img{
+    background-color: white;
+    width: 100%;
+}
+.corporate h2{
+    font-size: 45px;
+}
+.corporate span{
+    color: #008fff;
+}
+.corporaterightcontent p{
+    line-height: 25px;
+    text-align: justify;
+}
+.corporaterightcontent .commenbtn{
+    margin-top: 30px;
+}
+.corporaterightcontent a:hover{
+    animation: tada;
+    animation-duration: 2s;
+    transition: .5s all ease-in-out;
+    color: white;
+}
+.corporateimage2{
+    display: none;
+}
+/*-------------------------------------------css for teams-----------------------------------------*/
+.teammembers{
+    text-align: center;
+}
+.teammembers img{
+    display: table;
+    margin: 0 auto;
+    background-color: cornflowerblue;
+    border-radius: 50%;
+}
+.teammembers strong{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 22px;
+    display: block;
+    margin-top: 15px;
+}
+.teammembers aside{
+    color: #008fff;
+    margin-bottom: 15px;
+}
+.teammembers img:hover{
+    animation: rotateIn;
+    animation-duration: 2s;
+    transition: .5s all ease-in-out;
+}
+/*------------------------------------------css for testimonial section---------------------------------*/
+.testimonial{
+    background-color: beige;
+}
+.testimonial strong{
+    font-size: 18px;
+}
+.testimonial p{
+    text-align: justify;
+    margin: 15px 0;
+}
+.testimonialcontent{
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    background-color: white;
+    padding: 35px 25px;
+}
+.testimonialcontent span{
+    color: #008fff;
+}
+/*-------------------------------------------css for footer------------------------------------------*/
+footer{
+    padding-top: 50px;
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,0.6)),url(../images/footerimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+.footerheading h2{
+    font-size: 40px;
+    color: white;
+}
+.footerheading aside{
+    color: #008fff;
+}
+.footercontent{
+    color: white;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.footercontent a{
+    display: block;
+    color: white;
+}
+.footercontent strong{
+    display: block;
+}
+.footercontent i{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #008fff;
+    border-radius: 50%;
+    padding-top: 20px;
+    font-size: 25px;
+    color: #008fff;
+    margin-bottom: 30px;
+}
+/*--------------------------------------css for copyright section-------------------------------*/
+.copyright{
+    margin-top: 10px;
+}
+.copyright aside{
+    padding-top: 5px;
+}
+.copyright span{
+    color: #008fff;
+}
+.social-icons a{
+    display: inline-block;
+    font-size: 22px;
+    padding: 0 20px;
+    color: gray;
+}
+.social-icons a:hover{
+    animation: flip;
+    animation-duration: 2s;
+    transition: .5s all ease-in-out;
+    color: red;
+}
+/*-----------------------------------------css for media quaries-----------------------------------*/
+@media only screen and (max-width : 425px){
+
+    .banner .welcome{
+        display: block;
+    }
+    .bannercontent{
+        display: none;
+    }
+    #slider2{
+        display: block;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .icons{
+        display: none;
+    }
+    .corporate h2{
+        font-size: 25px;
+    }
+    .call{
+        background-image: none;
+    }
+    .callimagecontent{
+        color: black;
+        padding: 0;
+    }
+    .callimagecontent h2{
+        font-size: 24px;
+        padding: 0 23px;
+    }
+    .callimagecontent h2 a{
+        color: black;
+    }
+    .callimagecontent span{
+        margin: 0 auto;
+    }
+    .callimagecontent a{
+        color: black;
+    }
+    .callimagecontent .callbtn{
+        background-color: #008fff;
+        color: white;
+    }
+    .aboutus{
+        text-align: center;
+    }
+    .aboutus li{
+        line-height: 25px;
+    }
+    .pricecards{
+        margin: 20px 0;
+    }
+    .corporate{
+        background-image: none;
+        color: black;
+    }
+    .corporateimge{
+        margin-bottom: 15px;
+    }
+    .corporaterightcontent a{
+        display: block;
+        text-align: center;
+    }
+    .testimonialcontent{
+        margin: 20px 0;
+    }
+    footer{
+        background-image: none;
+    }
+    .footerheading h2{
+        color: black;
+    }
+    .footercontent{
+        color: black;
+    }
+    .footercontent a{
+        color: black;
+    }
+    .copyright aside{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .footerheading h2{
+        font-size: 30px;
+    }
+}
+
+ @media only screen and (max-width: 768px){
+    .padding{
+        padding: 30px 0;
+    }
+    .margin-bottom{
+        margin-bottom: 1rem;
+    }
+    header{
+        margin-bottom: 20px;
+    }
+}
+
+ @media only screen and (max-width : 1024px){
+     header ul{
+         font-size: 13px;
+     }
+     .owl-dots{
+         display: none;
+     }
+     .fourcards h4{
+         font-size: 23px;
+     }
+     .aboutuscontent{
+         font-size: 14px;
+     }
+     .aboutuscontent li{
+         line-height: 21px;
+     }
+     .corporaterightcontent{
+         font-size: 14px;
+     }
+     .corporaterightcontent p{
+         line-height: 21px;
+     }
+     .copyright aside{
+         margin-bottom: 15px;
+     }
+     .copyright .social-icons a{
+         padding: 0 18px;
+     }
+}
+@media only screen and (max-width:914px){
+    header .downloadbtn{
+        text-align: center;
+    }
+    .cardposition{
+        position: initial;
+        margin-bottom: 20px;
+    }
+    .fourcards{
+        margin: 20px 0;
+    }
+    .iconcontent{
+        text-align: center;
+    }
+    .aboutusimage1{
+        display: none;
+    }
+    .aboutusimage2{
+        display: block;
+    }
+    .pricecards{
+        margin: 20px 0;
+    }
+    .corporateimage1{
+        display: none;
+    }
+    .corporateimage2{
+        display: block;
+    }
+    .teammembers p{
+        font-size: 14px;
+    }
+    .footercontent{
+        font-size: 14px;
+    }
+    .testimonialcontent{
+        padding: 20px 9px;
+        font-size: 14px;
+    }
+    .testimonialcontent p{
+        line-height: 28px;
+    }
+    .teammembers p{
+        font-size: 14px;
+    }
+    .copyright .social-icons{
+        margin: 0 auto;
+    }
+}
